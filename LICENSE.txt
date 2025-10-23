@@ -1,0 +1,9 @@
+All copyrights and other ownership rights of this software (including but not limited to its source code, binaries, documentation, and related materials) belong solely to the author Ruogu Li.
+
+The author provides no express or implied warranties, including without limitation warranties of merchantability, fitness for a particular purpose, and non-infringement. You assume all risks and consequences arising from the use of this software. In no event shall the author be liable for any direct, indirect, incidental, special, punitive, or consequential damages (including but not limited to loss of data, profits, or business interruption) arising out of the use or inability to use this software.
+
+Any individual or organization is granted the right to use this software free of charge, provided that any results produced using this software (or any part thereof) — including but not limited to academic papers, research reports, products, services, or any publicly released outcomes — must clearly and prominently cite this software.
+
+Note: This software is in a very early stage of development and may contain unknown bugs, defects, or instabilities. Please evaluate the risks and use with caution.
+
+The author reserves the right to modify these terms at any time without notice.

@@ -1,0 +1,12 @@
+{
+  "task": "sp",
+  "functional": "B3LYP",
+  "basis": "def2-TZVP",
+  "aux": "def2/J",
+  "dispersion": "D3BJ",
+  "memoryMB": "3500",
+  "cores": "64",
+  "scfPrecision": "NormalSCF",
+  "freezeH": false,
+  "exportAllFrames": false
+}

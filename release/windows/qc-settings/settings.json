@@ -1,0 +1,12 @@
+{
+  "viewPlane": "Z",
+  "cameraDistanceMode": "auto",
+  "customCameraDistance": null,
+  "parallelCoreCountInput": "4",
+  "includeBackgroundInExport": true,
+  "meshQualityPreset": "high",
+  "customSphereSegmentsInput": "32",
+  "customCylinderSegmentsInput": "16",
+  "blockSystemContextMenu": true,
+  "developerMode": false
+}

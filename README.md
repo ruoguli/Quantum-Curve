@@ -6,7 +6,14 @@ This is the first version of **Quantum Curve** (QC), which enables the reading o
 
 
 
-## What we are doing🍦
-1. Right-click operation.
-2. Customize the chemical bond type between atoms.
-3. Support for more file types.
+# 💡Brief instructions:
+1. Left-click to rotate (does not affect molecular coordinates).
+2. Right-click to move (does not affect molecular coordinates).
+3. Ctrl + Left-click to rotate (**changes molecular coordinates**).
+4. Ctrl + Right-click to move (**changes molecular coordinates**).
+
+# To Do List:
+1. 🍦
+2. 🎃
+3. 🐱
+4. 🐶
