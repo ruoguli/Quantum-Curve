@@ -6,6 +6,9 @@
 
 Quantum Curve is a free middleware application for computational chemistry. We plan to continuously expand the list of supported programs and input formats in future releases. 💐
 
+<img width="1665" height="933" alt="image" src="https://github.com/user-attachments/assets/d81f679e-4708-4dcd-b035-c30b1000c19d" />
+
+
 Changes in Quantum Curve version 0.1.1:
 
 1. Updated the right-click pan interaction to avoid strange rotation centers after panning. Ctrl + right-click behavior is unchanged.
@@ -27,8 +30,6 @@ Changes in Quantum Curve version 0.1.1:
 
 
 
-
-<img width="1621" height="1204" alt="qqgg" src="https://github.com/user-attachments/assets/9630df94-759a-41b6-9e2f-82c04fee6c26" />
 
 
 
