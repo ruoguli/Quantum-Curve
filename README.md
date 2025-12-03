@@ -21,12 +21,12 @@ Changes in Quantum Curve version 0.1.2:
 
 
 ----------------------------------
-## 1.1 Electrostatic Potential Analysis and Bond Order Analysis
+## 🍰1.1 Electrostatic Potential Analysis and Bond Order Analysis
 
 <img width="1425" height="798" alt="image" src="https://github.com/user-attachments/assets/06c1ae80-4251-4353-a764-3784177c30e4" />
 
 
-## 1.2 AGENT🤖 (Version 0.1.1)
+## 🍰1.2 AGENT🤖 (Version 0.1.1)
 
 <img width="1434" height="807" alt="image" src="https://github.com/user-attachments/assets/af3d2449-a5a8-4c4c-a50f-bc6023f8c16b" />
 
