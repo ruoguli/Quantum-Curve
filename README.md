@@ -1,13 +1,35 @@
-# Quantum Curve Version 0.1.1
+# Quantum Curve Version 0.1.2
 
 ## 🍰1. About
-
-
 
 Quantum Curve is a free middleware application for computational chemistry. We plan to continuously expand the list of supported programs and input formats in future releases. 💐
 
 <img width="1665" height="933" alt="image" src="https://github.com/user-attachments/assets/d81f679e-4708-4dcd-b035-c30b1000c19d" />
 
+
+
+-------------------------------------------------
+
+Changes in Quantum Curve version 0.1.2:
+
+1. Added support for molecular surface electrostatic potential calculation.
+2. Added support for Mayer, Mulliken, and Wiberg bond order calculations.
+3. Added a basic Agent interface.
+4. Modified the SSH interface.
+5. Added parsing of molecular structures from .gro, .pqr and .inp (BDF).
+
+
+
+----------------------------------
+## 1.1 Electrostatic Potential Analysis and Bond Order Analysis
+
+
+
+## 1.2 AGENT🤖 (Version 0.1.1)
+
+
+
+----------------------------------
 
 Changes in Quantum Curve version 0.1.1:
 
@@ -28,9 +50,7 @@ Changes in Quantum Curve version 0.1.1:
 15. Added an Application font setting for customizing the app font.
 16. Added SSH connections to remote servers.
 
-
-
-
+----------------------------------------------------------------------
 
 
 
@@ -39,32 +59,31 @@ Changes in Quantum Curve version 0.1.1:
 
 
 
-| V 0.1.1  |     Format     | Atom coordinates (I/O) | Cell | Vibrations (I) | Optimization (I) | GTFs | Version |
-| :------: | :------------: | :--------------------: | ---- | :------------: | :--------------: | :--: | :-----: |
-|          |      .xyz      |          ✅/✅           |      |                |                  |      |  Beta   |
-|          |      .mol      |          ✅/❌           |      |                |                  |      |  Beta   |
-|          |     .mol2      |          ✅/❌           |      |                |                  |      |  Beta   |
-|          |      .pdb      |          ✅/✅           |      |                |                  |      |  Beta   |
-|          |      .cif      |          ✅/✅           | ✅    |                |                  |      |  Beta   |
-|          |   .cube/.cub   |          ✅/❌           |      |                |                  |      |  Beta   |
-|          |      .wfn      |          ✅/❌           |      |                |                  |      |  Beta   |
-|   ORCA   |      .inp      |          ✅/✅           |      |                |                  |      |  Beta   |
-|   ORCA   |      .out      |          ✅/❌           |      |       ✅        |        ✅         |      |  Beta   |
-|   ORCA   |     .hess      |          ✅/❌           |      |       ✅        |                  |      |  Beta   |
-|   ORCA   | .molden/.input |          ✅/❌           |      |                |                  |  ✅   |  Beta   |
-| Gaussian |      .gjf      |          ✅/✅           | ✅    |                |                  |      |  Beta   |
-| Gaussian |   .out/.log    |          ✅/❌           |      |       ✅        |        ✅         |      |  Beta   |
-| Gaussian |   .fch/.fchk   |          ✅/❌           |      |                |                  |  ✅   |  Beta   |
-| Gaussian |      .wfx      |          ✅/❌           |      |                |                  |      |  Beta   |
-|  MOPAC   |      .mop      |          ✅/❌           |      |                |                  |      |  Beta   |
-|   PSI4   |      .inp      |          ✅/❌           |      |                |                  |      |  Beta   |
-|   CP2K   | .inp/.restart  |          ✅/❌           | ✅    |                |                  |      |  Beta   |
-|    QE    |      .in       |          ✅/❌           | ✅    |                |                  |      |  Beta   |
-|   VASP   |     POSCAR     |          ✅/✅           | ✅    |                |                  |      |  Beta   |
-|  ABACUS  |      STRU      |          ✅/❌           | ✅    |                |                  |      |  Beta   |
-|          |                |                        |      |                |                  |      |         |
-
-
+| V 0.1.1  |     Format     | Atom coordinates (I/O) | Cell | Vib (I) | Opt (I) | GTFs | Version |
+| :------: | :------------: | :--------------------: | ---- | :-----: | :-----: | :--: | :-----: |
+|          |      .xyz      |          ✅/✅           |      |         |         |      |  Beta   |
+|          |      .mol      |          ✅/❌           |      |         |         |      |  Beta   |
+|          |     .mol2      |          ✅/❌           |      |         |         |      |  Beta   |
+|          |   .pdb/.pqr    |          ✅/✅           |      |         |         |      |  Beta   |
+|          |      .cif      |          ✅/✅           | ✅    |         |         |      |  Beta   |
+|          |   .cube/.cub   |          ✅/❌           |      |         |         |      |  Beta   |
+|          |      .wfn      |          ✅/❌           |      |         |         |  ✅   |  Beta   |
+|   ORCA   |      .inp      |          ✅/✅           |      |         |         |      |  Beta   |
+|   ORCA   |      .out      |          ✅/❌           |      |    ✅    |    ✅    |      |  Beta   |
+|   ORCA   |     .hess      |          ✅/❌           |      |    ✅    |         |      |  Beta   |
+|   ORCA   | .molden/.input |          ✅/❌           |      |         |         |  ✅   |  Beta   |
+| Gaussian |      .gjf      |          ✅/✅           | ✅    |         |         |      |  Beta   |
+| Gaussian |   .out/.log    |          ✅/❌           |      |    ✅    |    ✅    |      |  Beta   |
+| Gaussian |   .fch/.fchk   |          ✅/❌           |      |         |         |  ✅   |  Beta   |
+| Gaussian |      .wfx      |          ✅/❌           |      |         |         |      |  Beta   |
+|  MOPAC   |      .mop      |          ✅/❌           |      |         |         |      |  Beta   |
+|   PSI4   |      .inp      |          ✅/❌           |      |         |         |      |  Beta   |
+|   CP2K   | .inp/.restart  |          ✅/❌           | ✅    |         |         |      |  Beta   |
+|    QE    |      .in       |          ✅/❌           | ✅    |         |         |      |  Beta   |
+|   VASP   |     POSCAR     |          ✅/✅           | ✅    |         |         |      |  Beta   |
+|  ABACUS  |      STRU      |          ✅/❌           | ✅    |         |         |      |  Beta   |
+| GROMACS  |      .gro      |          ✅/❌           |      |         |         |      |  Beta   |
+|   BDF    |      .inp      |          ✅/❌           |      |         |         |      |  Beta   |
 
 
 
@@ -80,9 +99,7 @@ Changes in Quantum Curve version 0.1.1:
 
 
 
-
-
-## 🗓 4. To Do List:
+## 🗓 5. To Do List:
 
 
 
