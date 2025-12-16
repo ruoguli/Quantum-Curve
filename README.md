@@ -1,4 +1,4 @@
-# Quantum Curve Version 0.1.3
+# Quantum Curve Version 0.1.4
 
 ## 🍰1. About
 
@@ -8,6 +8,19 @@ Quantum Curve is a free middleware application for computational chemistry. We p
 
 
 -------------------------------------------------
+Changes in Quantum Curve version 0.1.4:
+
+1. Added support for Interaction Region Indicator analysis.
+2. Added support for Local electron attachment energy analysis.
+3. Added support for Localized orbital locator (LOL) / Electron localization function (ELF) analysis.
+4. Added support for Natural Fragment Bond Orbital (NFBO) analysis.
+5. Updated the SSH interface.
+6. Updated the Agent interface.
+7. Updated the Jobs interface.
+8. Fixed several bugs and inevitably introduced a few unknown ones.
+
+------------------------------
+
 Changes in Quantum Curve version 0.1.3:
 
 1. Added support for reading Qbics .inp and .out files.
@@ -16,8 +29,6 @@ Changes in Quantum Curve version 0.1.3:
 4. Added an early version of electron density difference calculations.
 5. Fixed the surface settings iso value option not applying immediately after rendering HOMO/LUMO orbitals.
 6. Fixed several bugs and inevitably introduced a few unknown ones.
-
-
 
 -------------------------------------------------
 
@@ -72,7 +83,7 @@ Changes in Quantum Curve version 0.1.1:
 
 
 
-| V 0.1.3  |     Format     | coordinates (I/O) | Cell | Vib (I) | Opt (I) | GTFs | Version |
+| V 0.1.4  |     Format     | coordinates (I/O) | Cell | Vib (I) | Opt (I) | GTFs | Version |
 | :------: | :------------: | :---------------: | ---- | :-----: | :-----: | :--: | :-----: |
 |          |      .xyz      |        ✅/✅        |      |         |         |      |  Beta   |
 |          |      .mol      |        ✅/❌        |      |         |         |      |  Beta   |
@@ -102,6 +113,8 @@ Changes in Quantum Curve version 0.1.1:
 | Multiwfn |     .mwfn      |        ✅/❌        |      |         |         |  ✅   |  Beta   |
 |   VASP   |     CHGCAR     |        ✅/❌        | ✅    |         |         |      |  Beta   |
 |   VASP   |      CHG       |        ✅/❌        |      |         |         |      |  Beta   |
+|          |                |                   |      |         |         |      |         |
+|          |                |                   |      |         |         |      |         |
 
 
 
