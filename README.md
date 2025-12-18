@@ -1,4 +1,4 @@
-# Quantum Curve Version 0.1.4
+# Quantum Curve Version 0.1.5
 
 ## 🍰1. About
 
@@ -7,7 +7,25 @@ Quantum Curve is a free middleware application for computational chemistry. We p
 <img width="1665" height="933" alt="image" src="https://github.com/user-attachments/assets/d81f679e-4708-4dcd-b035-c30b1000c19d" />
 
 
--------------------------------------------------
+
+
+
+----------------------------------
+
+Changes in Quantum Curve version 0.1.5:
+
+1. Improved loading speed for files in the .cube folder, achieving a 4–10× speedup on the test set.
+
+2. Updated the double/triple bond display logic for a more physically faithful visualization.
+
+3. Improved rendering performance when displaying many atoms, gaining +20 FPS on the test set.
+
+4. Fixed several bugs and inevitably introduced a few unknown ones.
+
+   
+
+-----------------------------------
+
 Changes in Quantum Curve version 0.1.4:
 
 1. Added support for Interaction Region Indicator analysis.
@@ -83,7 +101,7 @@ Changes in Quantum Curve version 0.1.1:
 
 
 
-| V 0.1.4  |     Format     | coordinates (I/O) | Cell | Vib (I) | Opt (I) | GTFs | Version |
+| V 0.1.5  |     Format     | coordinates (I/O) | Cell | Vib (I) | Opt (I) | GTFs | Version |
 | :------: | :------------: | :---------------: | ---- | :-----: | :-----: | :--: | :-----: |
 |          |      .xyz      |        ✅/✅        |      |         |         |      |  Beta   |
 |          |      .mol      |        ✅/❌        |      |         |         |      |  Beta   |
