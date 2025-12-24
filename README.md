@@ -1,4 +1,4 @@
-# Quantum Curve Version 0.1.5
+# Quantum Curve Version 0.1.6
 
 ## 🍰1. About
 
@@ -8,21 +8,25 @@ Quantum Curve is a free middleware application for computational chemistry. We p
 
 
 
+-------------------
 
+Changes in Quantum Curve version 0.1.6:
+
+1. Fixed numerous edge cases introduced by new features in the previous release.
+2. Added export of input files to .glb and .obj. You can use Blender and other tools to create high-quality 3D renders from these files. For various reasons, we recommend exporting to .glb.
+3. Added support for reading molecular coordinates from XMVB .xmi/.xmo files.
+4. Added support for reading IR, Raman, UV-Vis, ECD, VCD, and NMR spectrum plotting from ORCA/Gaussian output files. See the table in README.md for the supported scope.
+5. Happy holidays. 🌳🌳🌳🌳🌳🌳
 
 ----------------------------------
 
 Changes in Quantum Curve version 0.1.5:
 
-1. Improved loading speed for files in the .cube folder, achieving a 4–10× speedup on the test set.
+1. Improved .cube file loading speed, achieving a 4–10× speedup on the test set.
 
 2. Updated the double/triple bond display logic for a more physically faithful visualization.
-
 3. Improved rendering performance when displaying many atoms, gaining +20 FPS on the test set.
-
 4. Fixed several bugs and inevitably introduced a few unknown ones.
-
-   
 
 -----------------------------------
 
@@ -101,40 +105,45 @@ Changes in Quantum Curve version 0.1.1:
 
 
 
-| V 0.1.5  |     Format     | coordinates (I/O) | Cell | Vib (I) | Opt (I) | GTFs | Version |
-| :------: | :------------: | :---------------: | ---- | :-----: | :-----: | :--: | :-----: |
-|          |      .xyz      |        ✅/✅        |      |         |         |      |  Beta   |
-|          |      .mol      |        ✅/❌        |      |         |         |      |  Beta   |
-|          |     .mol2      |        ✅/❌        |      |         |         |      |  Beta   |
-|          |   .pdb/.pqr    |        ✅/✅        |      |         |         |      |  Beta   |
-|          |      .cif      |        ✅/✅        | ✅    |         |         |      |  Beta   |
-|          |   .cube/.cub   |        ✅/❌        |      |         |         |      |  Beta   |
-|          |      .wfn      |        ✅/✅        |      |         |         |  ✅   |  Beta   |
-|   ORCA   |      .inp      |        ✅/✅        |      |         |         |      |  Beta   |
-|   ORCA   |      .out      |        ✅/❌        |      |    ✅    |    ✅    |      |  Beta   |
-|   ORCA   |     .hess      |        ✅/❌        |      |    ✅    |         |      |  Beta   |
-|   ORCA   | .molden/.input |        ✅/✅        |      |         |         |  ✅   |  Beta   |
-| Gaussian |      .gjf      |        ✅/✅        | ✅    |         |         |      |  Beta   |
-| Gaussian |   .out/.log    |        ✅/❌        |      |    ✅    |    ✅    |      |  Beta   |
-| Gaussian |   .fch/.fchk   |        ✅/✅        |      |         |         |  ✅   |  Beta   |
-| Gaussian |      .wfx      |        ✅/❌        |      |         |         |      |  Beta   |
-|  MOPAC   |      .mop      |        ✅/❌        |      |         |         |      |  Beta   |
-|   PSI4   |      .inp      |        ✅/❌        |      |         |         |      |  Beta   |
-|   CP2K   | .inp/.restart  |        ✅/❌        | ✅    |         |         |      |  Beta   |
-|    QE    |      .in       |        ✅/❌        | ✅    |         |         |      |  Beta   |
-|   VASP   |     POSCAR     |        ✅/✅        | ✅    |         |         |      |  Beta   |
-|  ABACUS  |      STRU      |        ✅/❌        | ✅    |         |         |      |  Beta   |
-| GROMACS  |      .gro      |        ✅/❌        |      |         |         |      |  Beta   |
-|   BDF    |      .inp      |        ✅/❌        |      |         |         |      |  Beta   |
-|  Qbics   |      .inp      |        ✅/❌        |      |         |         |      |  Beta   |
-|  Qbics   |      .out      |        ✅/❌        |      |         |    ✅    |      |  Beta   |
-| Multiwfn |     .mwfn      |        ✅/❌        |      |         |         |  ✅   |  Beta   |
-|   VASP   |     CHGCAR     |        ✅/❌        | ✅    |         |         |      |  Beta   |
-|   VASP   |      CHG       |        ✅/❌        |      |         |         |      |  Beta   |
-|          |                |                   |      |         |         |      |         |
-|          |                |                   |      |         |         |      |         |
+| V 0.1.6  |     Format     | coordinates (I/O) | Cell |  Spectra  |   Opt    | GTFs | Version |
+| :------: | :------------: | :---------------: | ---- | :-------: | :------: | :--: | :-----: |
+|          |      .xyz      |        ✅/✅        |      |           |          |      |  Beta   |
+|          |      .mol      |        ✅/❌        |      |           |          |      |  Beta   |
+|          |     .mol2      |        ✅/❌        |      |           |          |      |  Beta   |
+|          |   .pdb/.pqr    |        ✅/✅        |      |           |          |      |  Beta   |
+|          |      .cif      |        ✅/✅        | ✅    |           |          |      |  Beta   |
+|          |   .cube/.cub   |        ✅/❌        |      |           |          |      |  Beta   |
+|          |      .wfn      |        ✅/✅        |      |           |          |  ✅   |  Beta   |
+|   ORCA   |      .inp      |        ✅/✅        |      |           |          |      |  Beta   |
+|   ORCA   |      .out      |        ✅/❌        |      | ✅ **[1]** |    ✅     |      |  Beta   |
+|   ORCA   |     .hess      |        ✅/❌        |      |     ✅     |          |      |  Beta   |
+|   ORCA   | .molden/.input |        ✅/✅        |      |           |          |  ✅   |  Beta   |
+| Gaussian |      .gjf      |        ✅/✅        | ✅    |           |          |      |  Beta   |
+| Gaussian |   .out/.log    |        ✅/❌        |      | ✅ **[2]** |    ✅     |      |  Beta   |
+| Gaussian |   .fch/.fchk   |        ✅/✅        |      |           |          |  ✅   |  Beta   |
+| Gaussian |      .wfx      |        ✅/❌        |      |           |          |      |  Beta   |
+|  MOPAC   |      .mop      |        ✅/❌        |      |           |          |      |  Beta   |
+|   PSI4   |      .inp      |        ✅/❌        |      |           |          |      |  Beta   |
+|   CP2K   | .inp/.restart  |        ✅/❌        | ✅    |           |          |      |  Beta   |
+|   CP2K   |      .out      |        ❌/❌        |      |           | **ASAP** |      |         |
+|    QE    |      .in       |        ✅/❌        | ✅    |           |          |      |  Beta   |
+|   VASP   |     POSCAR     |        ✅/✅        | ✅    |           |          |      |  Beta   |
+|  ABACUS  |      STRU      |        ✅/❌        | ✅    |           |          |      |  Beta   |
+| GROMACS  |      .gro      |        ✅/❌        |      |           |          |      |  Beta   |
+|   BDF    |      .inp      |        ✅/❌        |      |           |          |      |  Beta   |
+|  Qbics   |      .inp      |        ✅/❌        |      |           |          |      |  Beta   |
+|  Qbics   |      .out      |        ✅/❌        |      |           |    ✅     |      |  Beta   |
+| Multiwfn |     .mwfn      |        ✅/❌        |      |           |          |  ✅   |  Beta   |
+|   VASP   |     CHGCAR     |        ✅/❌        | ✅    |           |          |      |  Beta   |
+|   VASP   |      CHG       |        ✅/❌        |      |           |          |      |  Beta   |
+|          |    **.glb**    |        ❌/✅        |      |           |          |      |  Beta   |
+|          |    **.obj**    |        ❌/✅        |      |           |          |      |  Beta   |
+|   XMVB   |      .xmi      |        ✅/❌        |      |           |          |      |  Beta   |
+|   XMVB   |      .xmo      |        ✅/❌        |      |           |          |      |  Beta   |
 
+[1] IR/Raman/UV-Vis/ECD
 
+[2] IR/Raman/UV-Vis/ECD/VCD/NMR
 
 
 
