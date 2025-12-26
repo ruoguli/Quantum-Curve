@@ -1,4 +1,4 @@
-# Quantum Curve Version 0.1.6
+# Quantum Curve Version 0.1.7
 
 ## 🍰1. About
 
@@ -7,6 +7,14 @@ Quantum Curve is a free middleware application for computational chemistry. We p
 <img width="1665" height="933" alt="image" src="https://github.com/user-attachments/assets/d81f679e-4708-4dcd-b035-c30b1000c19d" />
 
 
+
+-----------------------
+
+Changes in Quantum Curve version 0.1.7:
+
+1. Updated ORCA .out trajectory parsing to avoid incorrect structure sequences in certain cases.
+2. Refined the list area layout on the IR spectra page.
+3. Added support for reading molecular coordinates and orbital data from orca_2json-generated .json files.
 
 -------------------
 
@@ -70,7 +78,7 @@ Changes in Quantum Curve version 0.1.2:
 <img width="1425" height="798" alt="image" src="https://github.com/user-attachments/assets/06c1ae80-4251-4353-a764-3784177c30e4" />
 
 
-## 🍰1.2 AGENT🤖 (Version 0.1.1)
+## 🍰1.2 AGENT🤖 (Version 0.1.2)
 
 <img width="1434" height="807" alt="image" src="https://github.com/user-attachments/assets/af3d2449-a5a8-4c4c-a50f-bc6023f8c16b" />
 
@@ -105,7 +113,7 @@ Changes in Quantum Curve version 0.1.1:
 
 
 
-| V 0.1.6  |     Format     | coordinates (I/O) | Cell |  Spectra  |   Opt    | GTFs | Version |
+|  V0.1.7  |     Format     | coordinates (I/O) | Cell |  Spectra  |   Opt    | GTFs | Version |
 | :------: | :------------: | :---------------: | ---- | :-------: | :------: | :--: | :-----: |
 |          |      .xyz      |        ✅/✅        |      |           |          |      |  Beta   |
 |          |      .mol      |        ✅/❌        |      |           |          |      |  Beta   |
@@ -118,6 +126,7 @@ Changes in Quantum Curve version 0.1.1:
 |   ORCA   |      .out      |        ✅/❌        |      | ✅ **[1]** |    ✅     |      |  Beta   |
 |   ORCA   |     .hess      |        ✅/❌        |      |     ✅     |          |      |  Beta   |
 |   ORCA   | .molden/.input |        ✅/✅        |      |           |          |  ✅   |  Beta   |
+|   ORCA   |     .json      |        ✅/❌        |      |           |          |  ✅   |  Beta   |
 | Gaussian |      .gjf      |        ✅/✅        | ✅    |           |          |      |  Beta   |
 | Gaussian |   .out/.log    |        ✅/❌        |      | ✅ **[2]** |    ✅     |      |  Beta   |
 | Gaussian |   .fch/.fchk   |        ✅/✅        |      |           |          |  ✅   |  Beta   |
