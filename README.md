@@ -1,4 +1,4 @@
-# Quantum Curve Version 0.1.7
+# Quantum Curve Version 0.1.8
 
 ## 🍰1. About
 
@@ -7,6 +7,14 @@ Quantum Curve is a free middleware application for computational chemistry. We p
 <img width="1665" height="933" alt="image" src="https://github.com/user-attachments/assets/d81f679e-4708-4dcd-b035-c30b1000c19d" />
 
 
+
+-------------------------
+
+Changes in Quantum Curve version 0.1.8:
+
+1. Fixed some issues related to interaction and rendering.
+2. Renamed the Periodic Table to the Element Picker. Added an early test version of molecular structure building.
+3. Happy New Year 🎇.
 
 -----------------------
 
@@ -113,7 +121,7 @@ Changes in Quantum Curve version 0.1.1:
 
 
 
-|  V0.1.7  |     Format     | coordinates (I/O) | Cell |  Spectra  |   Opt    | GTFs | Version |
+|  V0.1.8  |     Format     | coordinates (I/O) | Cell |  Spectra  |   Opt    | GTFs | Version |
 | :------: | :------------: | :---------------: | ---- | :-------: | :------: | :--: | :-----: |
 |          |      .xyz      |        ✅/✅        |      |           |          |      |  Beta   |
 |          |      .mol      |        ✅/❌        |      |           |          |      |  Beta   |
@@ -149,6 +157,7 @@ Changes in Quantum Curve version 0.1.1:
 |          |    **.obj**    |        ❌/✅        |      |           |          |      |  Beta   |
 |   XMVB   |      .xmi      |        ✅/❌        |      |           |          |      |  Beta   |
 |   XMVB   |      .xmo      |        ✅/❌        |      |           |          |      |  Beta   |
+|          |                |                   |      |           |          |      |         |
 
 [1] IR/Raman/UV-Vis/ECD
 
